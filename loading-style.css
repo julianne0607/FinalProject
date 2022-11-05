@@ -1,0 +1,8 @@
+.img-loading-screen{
+    background-image: url('./IMG/Loading\ screen\ \(opsi\ 1\)\ \(1\).png');
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+}
