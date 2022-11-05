@@ -24,3 +24,35 @@ function fungsiKirimkan(){
         })
     } 
 }
+function fungsiListPelaporan(){
+    fetch('https://api.m3o.com/v1/notes/List', {
+        method: 'GET', // or 'PUT'
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer OGRiMzA5MGYtNTkxYy00ZDIxLTk4NzctM2UxODg0MjViMTUy'
+        },
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            console.log('Success:', data);
+            if(data.notes.length>0){
+                let list='';
+                for(i=0;i<data.notes.length;i++){
+                    list+=`
+                        <div class="card mb-3 card-style">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-3 text-center right-border">${new Date(data.notes[i].updated).toDateString()}</div>
+                                    <div class="col-9">${data.notes[i].text}</div>
+                                </div>
+                            </div>
+                        </div>
+                    `
+                }
+                document.getElementById('list-laporan').innerHTML = list;
+            }
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+}
