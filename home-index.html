@@ -6,19 +6,92 @@
     <title>home screen</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="home-style.css">
+    <link rel="stylesheet" href="./asset/sweetalert2.min.css">
+    <style>
+      .swal2-popup{
+        padding: 24px 2px !important;
+        font-size: 16px;
+      }
+    </style>
+
   </head>
   <body>
+    <div class="navigationMenu pt-3 d-flex justify-content-between">
+      <a href="#">
+        <img src="./IMG/navigasi/kiri atas.png" class="tombol-chocolate-navigationMenu">
+      </a>
+      <a href="#">
+        <img src="./IMG/navigasi/notification.png" class="tombol-notification-navigationMenu">
+      </a>
+    </div>
+
     <div class="heading">
         <h1>Halo,</h1>
         <h2>Ayo laporkan! Jangan viralkan!</h2>
     </div>
-    <div class="searchbar">
-        <i class="fa-search"></i>
-        <input type="text" class="form-control" placeholder="Have a question?">
-        <button class="btn btn-primary">Search</button>
+    <div class="searchbar mt-3">
+      <img src="./IMG/search.png" class="img-searchbar" alt="img-searchbar">
     </div>
 
-    
+
+
+
+
+
+
+    <!-- ------------------------------------------------------------------------------ -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin-top: 20px;width: 100%;margin-right: auto;margin-left: auto;">
+      <div class="carousel-inner" style="border-radius: 24px;">
+        <div class="carousel-item active" style="">
+          <img src="./IMG/banner-ns.png" class="img-banner d-block w-100" alt="..."><!--Ganti Slide Banner dibagian src-->
+        </div>
+        <div class="carousel-item">
+          <img src="./IMG/banner2-ns.png" class="img-banner d-block w-100" alt="..."><!--Ganti Slide Banner dibagian src-->
+        </div>
+        <div class="carousel-item">
+          <img src="./IMG/banner3-ns.png" class="img-banner d-block w-100" alt="..."><!--Ganti Slide Banner dibagian src-->
+        </div>
+      </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </div>
+
+
+    <!-- ------------------------------------------------------------------------------ -->
+    <div class="4-fitur">
+      <div class="d-flex justify-content-around mt-4">
+        <a href="list-form.html" class="button-position text-center">
+          <img src="IMG/icon fitur/pelaporan.png" class="button-size"/>
+          <p class="text-size">Pelaporan</p>
+        </a>
+        <a href="#" class="button-position text-center">
+          <img src="IMG/icon fitur/ebook.png" class="button-size"/>
+          <p class="text-size">Ebook</p>
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=082136987639&text=hi+aku+membutuhkan+pendampingan&type=phone_number&app_absent=0" class="button-position text-center">
+          <img src="IMG/icon fitur/pendampingan.png" class="button-size"/>
+          <p class="text-size">Pendampingan</p>
+        </a>
+        <a href="#" class="button-position text-center">
+          <img src="IMG/icon fitur/emergecy.png" class="button-size" id="btn_emergency"/>
+          <p class="text-size">Emergency</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between mt-3">
+        <h2>Lanjutan membaca</h2>
+        <h2><p href="#" class="fw-bold">see all</p></h2>
+    </div>
+
+    <img src="./IMG/lanjutkan membaca ebook.png" class="img-banner shadow"/>
+
 
 
 
@@ -28,5 +101,15 @@
     <!-- Js link------------- -->
     <script src="home-script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="./asset/sweetalert2.min.js"></script>
+
+
   </body>
+
+  <section class="footer">
+    <div class="navigationbar">
+      <img src="./IMG/navigasi/5.png" class="img-banner" alt="">
+    </div>
+  </section>
+
 </html>
