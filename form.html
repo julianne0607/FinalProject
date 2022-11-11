@@ -8,9 +8,11 @@
     <link href="style.css" rel="stylesheet"/>
   </head>
   <body>
-    <a href="./list-form.html">
-      <img src="./IMG/grid.png" class="tombol-back">
-    </a>
+    <div class="navigationMenu pt-3">
+      <a href="list-form.html">
+        <img src="./IMG/grid.png" class="tombol-back">
+      </a>
+    </div>
     <div class="content">
       <p class="lead">Identitas Korban</p>
       <input type="text" class="form-control" id="nama" placeholder="Nama">
@@ -20,7 +22,7 @@
       <p class="lead mt-3">Bukti Kejadian</p>
       <textarea class="form-control" id="kronologikejadian" placeholder="Kronologi Kejadian" rows="5"></textarea>
       <div class="tombol">
-        <button type="button" class="btn btn-info kirimkan" onclick="fungsiKirimkan()">Kirimkan</button>
+        <button type="button" class="btn btn-light kirimkan fw-semibold rounded-2" onclick="fungsiKirimkan()">Kirimkan</button>
       </div>
     </div>
     
