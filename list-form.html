@@ -8,19 +8,22 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body onload="fungsiListPelaporan()">
-    <a href="./home-index.html">
-      <img src="./IMG/grid.png" class="tombol-back" />
-    </a>
+    <div class="navigationMenu pt-3">
+      <a href="home-index.html">
+        <img src="./IMG/grid.png" class="tombol-back">
+      </a>
+    </div>
+    
 
     <div class="content-2">
       <h2 class="text-center">Laporan Kamu</h2>
       <hr />
       <div class="d-flex justify-content-end">
         <a href="./form.html" class="tombol-tambah-laporan">
-          <button type="button" class="btn btn-light p-2" style="background-color: #f7f7f7">Tambah Laporan</button>
+          <button type="button" class="btn fw-semibold rounded-2" style="padding: 8px 79px;background-color: #0BCEC2;color: #fff;">Tambah Laporan</button>
         </a>
       </div>
-      <div class="pt-2" id="list-laporan"></div>
+      <div class="pt-2" id="list-laporan"></div> 
     </div>
 
     <script src="./script.js"></script>

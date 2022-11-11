@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;1,100&display=swap');
 
 html{
-    margin: 26px 26px 26px 26px;
+    background-image: url('./IMG/background-1.jpg');
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
 
 }
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: #FFFF;
+    /* background-color: #FFFF; */
+    margin: 26px 26px 26px 26px;
+
     /* padding: 26px 26px 0px 26px; */
 }
 h1{
@@ -19,13 +26,6 @@ h2{
     font-size: 18px;
     color: #464646;
 }
-.text-size{
-    font-size: 11px;
-    font-weight: 400;
-}
-.button-position{
-    width: 80%;
-}
 .heading{
     padding-top: 32px;
 }
@@ -35,11 +35,6 @@ h2{
     width: 100%;
     height: 100%;
 }
-.img-banner{
-    width: 100%;
-    height: 100%; 
-    padding: 0px 4px;
-}
 .img-ebook-1{
     width: 100%;
     height: 100%;
@@ -47,40 +42,18 @@ h2{
 .img-ebook-2{
     width: 100%;
     height: 100%;
-    margin-top: 26px;
-}
-.button-size{
-    width: 56px;
-    height: 56px;
+    margin-top: 30px;
 }
 .shadow{
     box-shadow: 2px 4px 11px rgba(70, 70, 70, 0.25);
     border-radius: 15px;
 }
-.navigationbar{
-    bottom: 0%;
-    position: fixed;
-    left: 0;
+
+.tombol-tambahEbook{
+    width: 142px;
+    height: 38px;
 }
-
-
-
-
-.swal2-cancel {
-    margin-right: 10px;
-}
-.swal2-popup{
-    padding: 24px 2px !important;
-    font-size: 16px;
- }
-
-
-
-.tombol-chocolate-navigationMenu{
+.tombol-back {
     width: 20px;
     height: 20px;
-}
-.tombol-notification-navigationMenu{
-    width: 38px;
-    height: 38px;
 }
