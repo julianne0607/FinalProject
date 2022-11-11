@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;1,100&display=swap');
 
+html{
+    margin: 26px 26px 26px 26px;
+
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: #FFFF;
-    padding: 26px 26px 0px 26px;
+    /* padding: 26px 26px 0px 26px; */
 }
 
 .content{
@@ -20,6 +25,8 @@ body{
     background-color: #0BCEC2;
     width: 100%;
     margin: 10px 0px;
+    color: #FFFF;
+    padding: 8px 79px
 }
 .tombol-back {
     width: 20px;
