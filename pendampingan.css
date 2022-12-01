@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;1,100&display=swap');
+
+html {
+  background-image: url('./IMG/in\ app\ chat-background.jpg');
+  background-repeat: no-repeat;
+  background-position: absolute;
+  background-size: 100%;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  /* background-color: #FFFF; */
+  margin: 26px 26px 26px 26px;
+
+  /* padding: 26px 26px 0px 26px; */
+}
+
+.tombol-back {
+  width: 20px;
+  height: 20px;
+}
+.in-app-things {
+  width: 282px;
+  height: 34px;
+  margin-right: 2rem;
+}
