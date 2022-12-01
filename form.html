@@ -17,12 +17,27 @@
       <p class="lead">Identitas Korban</p>
       <input type="text" class="form-control" id="nama" placeholder="Nama">
       <input type="text" class="form-control mt-2" id="nomortelepon" placeholder="Nomor Telepon">
-      <p class="lead mt-3">Tanggal Lahir</p>
+      <p class="lead mt-3">Tanggal Kejadian</p>
       <input type="date" class="form-control" id="tanggallahir" placeholder="DD/MM/YY">
+
+      <p class="lead mt-3">Tingkat Permasalahan</p>
+      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+        <label class="btn btn-outline-success" for="btnradio1">Ringan</label>
+      
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+        <label class="btn btn-outline-warning" for="btnradio2">Sedang</label>
+      
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+        <label class="btn btn-outline-danger" for="btnradio3">Berat</label>
+      </div>
+
       <p class="lead mt-3">Bukti Kejadian</p>
       <textarea class="form-control" id="kronologikejadian" placeholder="Kronologi Kejadian" rows="5"></textarea>
       <div class="tombol">
-        <button type="button" class="btn btn-light kirimkan fw-semibold rounded-2" onclick="fungsiKirimkan()">Kirimkan</button>
+        <a href="home-index2.html">
+          <button type="button" class="btn btn-light kirimkan fw-semibold rounded-2" onclick="fungsiKirimkan()">Kirimkan</button>
+        </a>
       </div>
     </div>
     
